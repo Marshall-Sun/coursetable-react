@@ -1,13 +1,41 @@
-import React from 'react';
-import { Button } from 'antd';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Layout } from "antd";
+import Coursetable from './coursetable';
 
-function App() {
-  return (
-    <div className="App">
-      <Button type="primary">Button</Button>
-    </div>
-  );
+const { Footer, Content } = Layout;
+
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {};
+  }
+  render() {
+    return (
+      <Layout>
+        <Content>
+          <h1>📗课表</h1>
+          <Coursetable></Coursetable>
+        </Content>
+        <Footer>
+          <div>
+            ©2020 by
+            <a href="https://msun.work/">Marshall Sun</a>
+          </div>
+          <div>
+            Proudly powered by
+            <a href="https://cn.vuejs.org/">
+              <img
+                width="55px"
+                src="https://cdn.jsdelivr.net/gh/marshall-sun/CDN@latest/coursetable/vue.svg"
+                alt="Vue.js"
+              />
+            </a>
+          </div>
+        </Footer>
+      </Layout>
+    );
+  }
 }
 
 export default App;
