@@ -1,1 +1,17 @@
 @import '~antd/dist/antd.css';
+
+h1 {
+  font-family: Ubuntu;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#footer {
+  text-align: center;
+  background-position: bottom;
+}
+
+#content {
+  margin-top: 32px;
+}

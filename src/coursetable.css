@@ -1,0 +1,15 @@
+.ant-cascader-picker {
+  width: 215px;
+}
+
+#selector {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+#selector button {
+  z-index: 100;
+}

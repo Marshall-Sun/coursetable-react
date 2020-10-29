@@ -13,11 +13,11 @@ class App extends React.Component {
   render() {
     return (
       <Layout>
-        <Content>
+        <Content id="content">
           <h1>📗课表</h1>
           <Coursetable></Coursetable>
         </Content>
-        <Footer>
+        <Footer id="footer">
           <div>
             ©2020 by
             <a href="https://msun.work/">Marshall Sun</a>
