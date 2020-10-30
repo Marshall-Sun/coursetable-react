@@ -13,3 +13,20 @@
 #selector button {
   z-index: 100;
 }
+
+.name {
+  font-weight: bold;
+}
+
+.location,
+.teacher {
+  font-size: smaller;
+}
+
+.ant-table-cell {
+  text-align: center !important;
+}
+
+tr.ant-table-row.ant-table-row-level-0 {
+  height: 70px !important;
+}

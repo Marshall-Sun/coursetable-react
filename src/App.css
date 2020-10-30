@@ -1,10 +1,19 @@
 @import '~antd/dist/antd.css';
 
+#root {
+  background:
+    url("https://cdn.jsdelivr.net/gh/marshall-sun/CDN@latest/coursetable/arches.png")
+    rgba(0, 0, 0, 0.55);
+  background-blend-mode: multiply;
+  color: black;
+}
+
 h1 {
   font-family: Ubuntu;
   text-align: center;
   font-weight: bold;
   margin-bottom: 10px;
+  font-size: 2em;
 }
 
 #footer {

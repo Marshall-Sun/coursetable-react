@@ -113,6 +113,14 @@ class Coursetable extends React.Component {
     )
   }
 
+  leftCell(num) {
+    return (
+      <>
+        <div>第 { num * 2 - 1 }-{ num * 2 } 节</div>
+      </>
+    )
+  }
+
   render() {
     return (
       <>
@@ -124,15 +132,15 @@ class Coursetable extends React.Component {
             allowClear={false}
           />
         </div>
-        <Table dataSource={this.state.data} pagination={false}>
-          <Column title="节次" dataIndex="key" render={(item) => <>{item}</>} />
-          <Column title="星期日" dataIndex="Sun" render={this.tableCell} />
-          <Column title="星期一" dataIndex="Mon" render={this.tableCell} />
-          <Column title="星期二" dataIndex="Tue" render={this.tableCell} />
-          <Column title="星期三" dataIndex="Wed" render={this.tableCell} />
-          <Column title="星期四" dataIndex="Tur" render={this.tableCell} />
-          <Column title="星期五" dataIndex="Fri" render={this.tableCell} />
-          <Column title="星期六" dataIndex="Sat" render={this.tableCell} />
+        <Table dataSource={this.state.data} pagination={false} scroll={{x: '800px'}}>
+          <Column title="节次" dataIndex="key" render={this.leftCell} width={340} />
+          <Column title="星期日" dataIndex="Sun" render={this.tableCell} width={300} />
+          <Column title="星期一" dataIndex="Mon" render={this.tableCell} width={300} />
+          <Column title="星期二" dataIndex="Tue" render={this.tableCell} width={300} />
+          <Column title="星期三" dataIndex="Wed" render={this.tableCell} width={300} />
+          <Column title="星期四" dataIndex="Tur" render={this.tableCell} width={300} />
+          <Column title="星期五" dataIndex="Fri" render={this.tableCell} width={300} />
+          <Column title="星期六" dataIndex="Sat" render={this.tableCell} width={300} />
         </Table>
       </>
     );

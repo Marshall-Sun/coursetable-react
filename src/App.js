@@ -12,7 +12,7 @@ class App extends React.Component {
   }
   render() {
     return (
-      <Layout>
+      <Layout id="root">
         <Content id="content">
           <h1>📗课表</h1>
           <Coursetable></Coursetable>
