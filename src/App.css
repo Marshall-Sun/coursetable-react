@@ -6,6 +6,10 @@ h1 {
   font-size: 2em;
 }
 
+#button {
+  text-align: center;
+}
+
 #footer {
   text-align: center;
   background-position: bottom;

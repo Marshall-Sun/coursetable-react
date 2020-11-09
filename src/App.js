@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import { Layout } from "antd";
 import Coursetable from "./coursetable";
+import GitHubButton from "react-github-btn";
 
 const { Footer, Content } = Layout;
 
@@ -15,6 +16,16 @@ class App extends React.Component {
       <Layout id="root">
         <Content id="content">
           <h1>📔课表</h1>
+          <div id="button">
+            <GitHubButton
+              href="https://github.com/Marshall-Sun/coursetable-react"
+              data-color-scheme="no-preference: light; light: dark; dark: light;"
+              data-icon="octicon-star"
+              data-size="large"
+            >
+              Star
+            </GitHubButton>
+          </div>
           <Coursetable></Coursetable>
         </Content>
         <Footer id="footer">
